@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Beige"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+	    	
+            <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Текущая скорость: " />
+            
+	        <TextView
+	            android:id="@+id/textViewSpeed"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_toRightOf="@+id/textView9"
+	            android:text="0" />
+        
+        </LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+
+			<Button
+			    android:id="@+id/buttonSpeed0"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="25"
+			    android:text="Pause" />
+
+			<Button
+			    android:id="@+id/buttonSpeed1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="25"
+			    android:text="Speed 1" />
+
+			<Button
+			    android:id="@+id/buttonSpeed2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="25"
+			    android:text="Speed 2" />
+	
+	        <Button
+	            android:id="@+id/buttonSpeed3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textViewSpeed"
+	            android:layout_weight="25"
+	            android:text="Speed 3" />
+        
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

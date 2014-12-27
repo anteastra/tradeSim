@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layoutGraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50" >
+
+            <!-- <FrameLayout
+                android:id="@+id/graphContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.anteastra.tradesim.GameActivity"
+                tools:ignore="MergeRootFrame" >
+
+            </FrameLayout> -->
+
+            <fragment
+                android:id="@+id/fragmentGraph"
+                android:name="com.anteastra.tradesim.gui.GraphFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_graph" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTimeControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <fragment
+                android:id="@+id/fragmentTimeControl"
+                android:name="com.anteastra.tradesim.gui.TimeControlFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_timecontrol" />
+
+            <!-- <FrameLayout
+                android:id="@+id/controlContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+            </FrameLayout> -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:id="@+id/layoutControl"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="50" >
+
+		<fragment
+		    android:id="@+id/fragmentControl"
+		    android:name="com.anteastra.tradesim.gui.ControlFragment"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    tools:layout="@layout/fragment_control" />
+	    
+		<!-- <FrameLayout 
+		    android:id="@+id/timeControlContainer"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    tools:context="com.anteastra.tradesim.GameActivity"
+		    tools:ignore="MergeRootFrame" /> -->
+    </LinearLayout>
+    
+</LinearLayout>
